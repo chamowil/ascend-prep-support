@@ -23,7 +23,7 @@
   <ul>
     <li><strong>Account data.</strong> Your email address, the name you enter (optional) and your password. Our authentication provider stores the password only as a salted hash, and we never see it.</li>
     <li><strong>Study data.</strong> The exams and drills you take, each answer you give, your scores, and the XP, streak and daily progress the app awards. This is the product: it is how the app scores you and shows your progress.</li>
-    <li><strong>Subscription data.</strong> If you buy Premium in the app, Apple processes the payment, and we never receive your payment card details. RevenueCat, our subscription provider, receives your account identifier and the App Store transaction details. From them we learn whether your subscription is active, which product you have and when it renews or expires.</li>
+    <li><strong>Subscription data.</strong> If you buy Premium in the app, Apple processes the payment, and we never receive your payment card details. Your purchase is tagged with your account identifier, and Apple sends us the signed transaction details. From them we learn whether your subscription is active, which product you have and when it renews, expires or is refunded.</li>
     <li><strong>Technical data.</strong> Our servers keep standard request logs (IP address, time and the request made) briefly, for security and to keep the service running.</li>
   </ul>
   <p>The app does not use advertising, analytics SDKs or tracking. It does not access your contacts, photos, location, camera or microphone.</p>
@@ -31,7 +31,7 @@
   <h2>3. Why we use it, and the legal basis</h2>
   <ul>
     <li><strong>To provide the service</strong> (performance of a contract): signing you in, running and scoring exams, showing your progress and giving Premium subscribers what they paid for.</li>
-    <li><strong>To manage subscriptions</strong> (contract): checking with Apple and RevenueCat whether your subscription is active.</li>
+    <li><strong>To manage subscriptions</strong> (contract): checking with Apple whether your subscription is active.</li>
     <li><strong>To keep the service secure and working</strong> (legitimate interest): server logs, rate limits and abuse prevention.</li>
     <li><strong>To answer you when you write to us</strong> (legitimate interest).</li>
   </ul>
@@ -40,7 +40,6 @@
   <ul>
     <li><strong>Supabase</strong> (database and authentication), hosted in Ireland, in the European Union.</li>
     <li><strong>Vercel</strong> (servers for the app's API), a US company. The application code runs in Dublin, Ireland.</li>
-    <li><strong>RevenueCat</strong> (in-app subscription management), a US company.</li>
     <li><strong>Apple</strong> (App Store payments), under Apple's own privacy policy.</li>
     <li><strong>GitHub</strong> (nightly encrypted database backups, kept for 30 days), a US company.</li>
   </ul>
